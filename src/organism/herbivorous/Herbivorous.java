@@ -1,6 +1,6 @@
-package herbivorous;
+package organism.herbivorous;
 
-import enimals.Enimal;
+import organism.enimals.Enimal;
 
 public class Herbivorous extends Enimal {
     private String name;
