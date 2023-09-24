@@ -1,10 +1,10 @@
 package organism.enimals.predators;
 
-public class Boa extends Predator {
-    public Boa(String nameOfAnimal, double weightOfEnimal, double kilogramOfFoodsInTheStomach, String pictureOfEnimal, double kilogramOfFoodForCompleteSaturation, int maxStepsPerMove) {
+public class Fox extends Predator{
+    public Fox(String nameOfAnimal, double weightOfEnimal, double kilogramOfFoodsInTheStomach, String pictureOfEnimal, double kilogramOfFoodForCompleteSaturation, int maxStepsPerMove) {
         super(nameOfAnimal, weightOfEnimal, kilogramOfFoodsInTheStomach, pictureOfEnimal, kilogramOfFoodForCompleteSaturation, maxStepsPerMove);
     }
-    Boa boa = new Boa("boa", 15, 1.5, "\uD83D\uDC0D", 3, 1);
+    Fox fox =  new Fox("fox", 8, 1, "\uD83E\uDD8A", 2, 2);
     @Override
     public void reproduse() {
 

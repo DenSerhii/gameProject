@@ -1,5 +1,7 @@
 package entity;
 
+import island.Cell;
+
 public class GameField {
     private int width;
     private int height;
