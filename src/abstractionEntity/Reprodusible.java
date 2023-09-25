@@ -1,5 +1,5 @@
 package abstractionEntity;
 
 public interface Reprodusible {
-    Organizm reproduse();
+   public void reproduse();
 }

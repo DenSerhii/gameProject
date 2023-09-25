@@ -1,18 +1,31 @@
 package organism.herbivorous;
 
-import organism.enimals.Enimal;
+import abstractionEntity.EatEnimal;
+import organism.Enimal;
 
-public class Herbivorous extends Enimal {
+public abstract class Herbivorous extends Enimal {
+    private String pictureOfEnimal;
     private String name;
     private double weight;
     private double kilogramsOfFoodForCompleteSaturation;
-    private int speedMove;
+    private double kilogramsOfFoodInTheStomach;
+    private int maxStepsPerMove;
 
-    public Herbivorous(String name, double weight, double kilogramsOfFoodForCompleteSaturation, int speedMove) {
+    public Herbivorous(String pictureOfEnimal, String name, double weight, double kilogramsOfFoodForCompleteSaturation, double kilogramsOfFoodInTheStomach, int maxStepsPerMove) {
+        this.pictureOfEnimal = pictureOfEnimal;
         this.name = name;
         this.weight = weight;
         this.kilogramsOfFoodForCompleteSaturation = kilogramsOfFoodForCompleteSaturation;
-        this.speedMove = speedMove;
+        this.kilogramsOfFoodInTheStomach = kilogramsOfFoodInTheStomach;
+        this.maxStepsPerMove = maxStepsPerMove;
+    }
+
+    public String getPictureOfEnimal() {
+        return pictureOfEnimal;
+    }
+
+    public void setPictureOfEnimal(String pictureOfEnimal) {
+        this.pictureOfEnimal = pictureOfEnimal;
     }
 
     public String getName() {
@@ -39,16 +52,24 @@ public class Herbivorous extends Enimal {
         this.kilogramsOfFoodForCompleteSaturation = kilogramsOfFoodForCompleteSaturation;
     }
 
-    public int getSpeedMove() {
-        return speedMove;
+    public double getKilogramsOfFoodInTheStomach() {
+        return kilogramsOfFoodInTheStomach;
     }
 
-    public void setSpeedMove(int speedMove) {
-        this.speedMove = speedMove;
+    public void setKilogramsOfFoodInTheStomach(double kilogramsOfFoodInTheStomach) {
+        this.kilogramsOfFoodInTheStomach = kilogramsOfFoodInTheStomach;
     }
 
-    @Override
-    public void run() {
-
+    public int getMaxStepsPerMove() {
+        return maxStepsPerMove;
     }
+
+    public void setMaxStepsPerMove(int speedMove) {
+        this.maxStepsPerMove = maxStepsPerMove;
+    }
+
+
+    public abstract void reproduse();
+
+
 }
